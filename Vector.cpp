@@ -3,7 +3,7 @@
 
 void Vector::output( std::ostream &out ) const
 {
-	out << vx << "i + " << vy << "j + " << vz << "k";
+	out << vx << "i + " << vy << "j + " << vz << "k" << std::endl;
 }
 
 // The default constructor initialises all the variables to zero 

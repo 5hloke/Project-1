@@ -18,7 +18,7 @@ public:
    * And a second one.  Use the parameters to set the scalar components.
    * @param vx - the scalar value to use for i component
    * @param vy - the scalar value to use for j component
-   * @param vy - the scalar value to use for k component
+   * @param vz - the scalar value to use for k component
    */ 
   Vector( double vx, double vy, double vz );
 
@@ -48,13 +48,13 @@ public:
   
   /**
    * Updates the scalar of the i component to the given newVx parameter.
-   * @param newVx - the new value to use for the vx field.
+   * @param newVy - the new value to use for the vx field.
    */ 
   void setJ(double newVy);
 
   /**
    * Updates the scalar of the i component to the given newVx parameter.
-   * @param newVx - the new value to use for the vx field.
+   * @param newVz - the new value to use for the vx field.
    */ 
   void setK(double newVz);
   
@@ -86,7 +86,7 @@ public:
   Vector cross( const Vector &rhs ) const;
 
   /**
-   * Creates and returns a new Vector object that is dot product of this and the given Vector object.
+   * Returns the dot product of this and the given Vector object.
    * @return the dot product of this and the given Vector object.
    * @param rhs - the Vector object to dot with this object.
    */
@@ -115,6 +115,5 @@ private:
   double vx;
   double vy;
   double vz;
-  
 };
 #endif
